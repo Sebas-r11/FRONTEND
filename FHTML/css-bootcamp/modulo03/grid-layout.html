@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css-bootcamp/modulo03/css/grid.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Encabezado con barra de navegación -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">CodeMaster Pro</div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                </ul>
+            </nav>
+            <button class="nav-btn">¡Inscríbete Ahora!</button>
+        </div>
+    </header>
+
+    <!-- Sección principal con grid -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Domina el Desarrollo Web en 12 Semanas</h1>
+            <p>Nuestro curso intensivo te convertirá en un desarrollador web full-stack con las tecnologías más demandadas del mercado. Aprende HTML, CSS, JavaScript, React, Node.js y más.</p>
+            <a href="#contacto" class="cta-button">¡Quiero más información!</a>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/photo-1555066931-4365d14bab8c.avif" alt="Desarrollo web">
+        </div>
+    </section>
+
+    <!-- Tres tarjetas con información -->
+    <section class="benefits" id="beneficios">
+        <h2>¿Por qué elegir nuestro curso?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Aprendizaje Práctico</h3>
+                <p>Proyectos reales desde el primer día. Construye tu portafolio mientras aprendes con nuestra metodología learning by doing.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Instructores Expertos</h3>
+                <p>Nuestros profesores tienen más de 10 años de experiencia en la industria y han trabajado en empresas tecnológicas líderes.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Oportunidades Laborales</h3>
+                <p>Acceso a nuestra bolsa de trabajo exclusiva y sesiones de preparación para entrevistas técnicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="contact" id="contacto">
+        <h2>Contáctanos para más información</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="interest">¿Qué te interesa?</label>
+                <select id="interest" name="interest">
+                    <option value="frontend">Desarrollo Frontend</option>
+                    <option value="backend">Desarrollo Backend</option>
+                    <option value="fullstack">Full Stack</option>
+                    <option value="info">Solo información</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar solicitud</button>
+        </form>
+    </section>
+
+    <!-- Footer simple -->
+    <footer>
+        <div class="footer-content">
+            <h3>CodeMaster Pro</h3>
+            <p>El mejor curso de desarrollo web para transformar tu carrera</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2023 CodeMaster Pro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</body>
+</html>

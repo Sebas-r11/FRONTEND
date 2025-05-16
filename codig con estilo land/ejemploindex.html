@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoClean - Productos de limpieza ecológicos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Personalización de colores */
+        .bg-ecogreen {
+            background-color: #2e8b57;
+        }
+        .text-ecogreen {
+            color: #2e8b57;
+        }
+        .btn-ecogreen {
+            background-color: #2e8b57;
+            color: white;
+        }
+        .btn-ecogreen:hover {
+            background-color: #3cb371;
+            color: white;
+        }
+        .bg-ecolight {
+            background-color: #f0fff0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ecogreen py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-recycle me-2"></i>
+                EcoClean
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-ecolight py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 text-ecogreen fw-bold mb-4">Limpieza que cuida el planeta</h1>
+                    <p class="lead mb-4">Nuestros productos ecológicos ofrecen la misma eficacia que los tradicionales pero sin dañar el medio ambiente. ¡Haz el cambio hoy!</p>
+                    <a href="#productos" class="btn btn-ecogreen btn-lg me-2">Ver productos</a>
+                    <a href="#contacto" class="btn btn-outline-ecogreen btn-lg">Contactar</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Productos de limpieza ecológicos" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de testimonios (opcional) -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 text-ecogreen">Lo que dicen nuestros clientes</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="fs-4 mb-4">"Desde que uso EcoClean, mi casa brilla igual pero con la conciencia tranquila de no contaminar."</p>
+                                <p class="fw-bold">- María G., cliente desde 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="fs-4 mb-4">"Los productos de EcoClean son tan efectivos que he convencido a toda mi familia para que los usen."</p>
+                                <p class="fw-bold">- Carlos M., cliente desde 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-ecogreen rounded"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-ecogreen rounded"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards de características -->
+    <section id="productos" class="py-5 bg-ecolight">
+        <div class="container">
+            <h2 class="text-center mb-5 text-ecogreen">Nuestros beneficios</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-leaf text-ecogreen fs-1 mb-3"></i>
+                            <h3 class="h4">100% Ecológicos</h3>
+                            <p>Ingredientes naturales y biodegradables que no dañan el medio ambiente ni tu salud.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-currency-dollar text-ecogreen fs-1 mb-3"></i>
+                            <h3 class="h4">Precio competitivo</h3>
+                            <p>Mismo precio que los productos convencionales pero con todos los beneficios ecológicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-check-circle text-ecogreen fs-1 mb-3"></i>
+                            <h3 class="h4">Eficacia garantizada</h3>
+                            <p>Resultados comprobados en laboratorio y por miles de clientes satisfechos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acordeón de preguntas frecuentes (opcional) -->
+    <section id="nosotros" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="text-ecogreen mb-4">Preguntas frecuentes</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    ¿Son realmente efectivos?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutamente. Nuestros productos han sido testeados en laboratorios independientes y muestran la misma eficacia que los productos tradicionales, pero sin los químicos dañinos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    ¿Dónde se fabrican?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Todos nuestros productos se fabrican localmente en instalaciones con certificación ecológica, reduciendo así nuestra huella de carbono.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    ¿Ofrecen muestras gratis?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, tenemos un kit de muestras que puedes solicitar pagando solo el envío. ¡Es la mejor manera de comprobar la calidad de nuestros productos!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h2 class="text-ecogreen mb-4">Nuestra misión</h2>
+                    <p class="lead">En EcoClean creemos que la limpieza del hogar no debe comprometer la salud del planeta.</p>
+                    <p>Fundada en 2020, nuestra empresa nació de la frustración de no encontrar productos de limpieza efectivos que fueran realmente ecológicos. Hoy ofrecemos una gama completa de productos para todas las necesidades del hogar, con envases reciclables y fórmulas biodegradables.</p>
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Equipo EcoClean" class="img-fluid rounded shadow mt-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="py-5 bg-ecolight">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center text-ecogreen mb-5">Contáctanos</h2>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa tu nombre.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa tu apellido.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa un email válido.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor escribe tu mensaje.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Suscribirme al newsletter
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-ecogreen btn-lg px-4" type="submit">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 text-ecogreen mb-3">
+                        <i class="bi bi-recycle me-2"></i>
+                        EcoClean
+                    </h3>
+                    <p>Productos de limpieza ecológicos para un hogar limpio y un planeta saludable.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="h5 text-ecogreen mb-3">Enlaces</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#productos" class="text-white text-decoration-none">Productos</a></li>
+                        <li class="mb-2"><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h4 class="h5 text-ecogreen mb-3">Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Calle Ecológica 123, Madrid</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> +34 910 123 456</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i> info@ecoclean.example</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="h5 text-ecogreen mb-3">Horario</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Lunes - Viernes: 9:00 - 18:00</li>
+                        <li class="mb-2">Sábado: 10:00 - 14:00</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2023 EcoClean. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white text-decoration-none">Política de privacidad</a> | 
+                        <a href="#" class="text-white text-decoration-none">Términos de servicio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validación del formulario
+        (function () {
+            'use strict'
+            
+            var forms = document.querySelectorAll('.needs-validation')
+            
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+</html>
